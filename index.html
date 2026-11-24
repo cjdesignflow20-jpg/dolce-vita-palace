@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dolce Vita Palace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Roboto+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="hero">
+  <section class="hero" id="accueil">
+    <video class="hero-video hero-video-desktop" autoplay muted loop playsinline preload="none" poster="assets/v160_5.png" aria-label="Dolce Vita Palace" data-src="assets/hero.mp4"></video>
+    <video class="hero-video hero-video-mobile" autoplay muted loop playsinline preload="none" poster="mobile/hero/poster/Façade nocturne du Dolce Vita Palace (2).png" aria-hidden="true" data-src="mobile/hero/Main Edit.mp4"></video>
+    <header class="topbar">
+      <a class="brand" href="#accueil" aria-label="Dolce Vita Palace">
+        <img src="assets/v160_6.png" alt="Dolce Vita Palace">
+      </a>
+      <nav class="nav" aria-label="Navigation principale">
+        <a class="active" href="#accueil" data-page-link="hero" aria-current="page">Accueil</a>
+        <a href="#univers" data-page-link="univers">Notre univers</a>
+        <a href="#univers" data-page-link="univers">Gastronomie</a>
+        <a href="#univers" data-page-link="univers">Galerie</a>
+      </nav>
+      <a class="reserve" href="#univers" data-page-link="univers">Réserver une table</a>
+    </header>
+
+    <div class="hero-shade"></div>
+    <div class="hero-copy">
+      <p class="hero-kicker blur-target">RESTAURANT • LOUNGE • BOUAKÉ</p>
+      <h1 class="blur-target">DOLCE VITA PALACE</h1>
+      <p class="hero-subtitle blur-target">L'élégance des instants, le plaisir de se retrouver.</p>
+      <a class="discover blur-target" href="#univers" data-page-link="univers">DÉCOUVRIR NOTRE UNIVERS</a>
+    </div>
+  </section>
+
+  <main>
+    <section class="univers" id="univers">
+      <button class="page-back" type="button" aria-label="Retour à l'accueil">
+        <span class="page-back-arrow" aria-hidden="true">←</span>
+        <span class="page-back-label">RETOUR</span>
+      </button>
+      <div class="pattern pattern-top" aria-hidden="true"><div class="pattern-track"></div></div>
+      <div class="pattern pattern-bottom" aria-hidden="true"><div class="pattern-track"></div></div>
+
+      <header class="univers-heading">
+        <p class="eyebrow blur-target">BIENVENUE DANS UN AUTRE UNIVERS</p>
+        <h2><span class="title-light blur-target">L'expérience </span><span class="title-gold blur-target">Dolce Vita</span></h2>
+        <p class="univers-description blur-target">Découvrez les différents espaces du Dolce Vita Palace, entre détente, convivialité et ambiance lounge. Chaque recoin vous invite à vivre un moment unique dans un cadre chaleureux et élégant.</p>
+      </header>
+
+      <div class="gallery" aria-label="Galerie Dolce Vita Palace">
+        <button class="gallery-card" type="button" aria-label="Voir l'image 1"><img src="assets/v169_6.png" alt="Ambiance Dolce Vita Palace"></button>
+        <button class="gallery-card main" type="button" aria-label="Voir l'image 2"><img src="assets/v169_7.png" alt="Salon Dolce Vita Palace"></button>
+        <button class="gallery-card" type="button" aria-label="Voir l'image 3"><img src="assets/v169_9.png" alt="Ambiance Dolce Vita Palace"></button>
+        <button class="gallery-card" type="button" aria-label="Voir l'image 4"><img src="assets/v169_10.png" alt="Ambiance Dolce Vita Palace"></button>
+        <button class="gallery-card" type="button" aria-label="Voir l'image 5"><img src="assets/v169_11.png" alt="Ambiance Dolce Vita Palace"></button>
+      </div>
+    </section>
+  </main>
+  <div class="mobile-navigation">
+    <button class="mobile-menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Navigation mobile" hidden>
+      <a href="#accueil" data-page-link="hero" aria-current="page">Accueil</a>
+      <a href="#univers" data-page-link="univers">Notre univers</a>
+      <a href="#univers" data-page-link="univers">Gastronomie</a>
+      <a href="#univers" data-page-link="univers">Galerie</a>
+      <a class="mobile-reserve" href="#univers" data-page-link="univers">Réserver une table</a>
+    </nav>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
